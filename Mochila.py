@@ -25,7 +25,7 @@ fitness_history = [media_fitness(p, target, itens),]
 
 for i in range(epochs):
     # print(i)
-    p = evolve(p, target, itens)
+    p = evolve_roleta(p, target, itens)
     fitness_history.append(media_fitness(p, target, itens))
 
 for datum in fitness_history:
